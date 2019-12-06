@@ -207,7 +207,7 @@ model_vgg, history_vgg = train(model_vgg,
                        x_val,
                        y_val,
                        save_file_name = 'model_vgg.pt',
-                       n_epochs=20, # if change epoch number, don't forget to change the range limits in the visualization below
+                       n_epochs=30, # if change epoch number, don't forget to change the range limits in the visualization below
                        BATCH_SIZE = 4)
 
 model_resnet50, history_resnet50 = train(model_resnet50,
@@ -219,7 +219,7 @@ model_resnet50, history_resnet50 = train(model_resnet50,
                        x_val,
                        y_val,
                        save_file_name = 'model_resnet50.pt',
-                       n_epochs=20, # if change epoch number, don't forget to change the range limits in the visualization below
+                       n_epochs=30, # if change epoch number, don't forget to change the range limits in the visualization below
                        BATCH_SIZE = 4)
 
 #==========================================================================

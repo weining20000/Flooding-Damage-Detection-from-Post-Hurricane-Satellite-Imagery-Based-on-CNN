@@ -10,7 +10,7 @@ This code folder contains all source code for this project. It is suggested to r
       * It takes approximately 15 minutes to run the code. 
 3. satellite-images-of-hurricane-damage.zip
       + The dataset:
-          i. train_another: the training data; 5000 images of each class
-          ii. validation_another: the validation data; 1000 images of each class
-          iii. test_another: the unbalanced test data; 8000/1000 images of damaged/undamaged classes
-          vi. test: the balanced test data; 1000 images of each class (we only tested on the unbalanced dataset - test_another.)
+i. train_another: the training data; 5000 images of each class
+ii. validation_another: the validation data; 1000 images of each class
+iii. test_another: the unbalanced test data; 8000/1000 images of damaged/undamaged classes
+vi. test: the balanced test data; 1000 images of each class (we only tested on the unbalanced dataset - test_another.)

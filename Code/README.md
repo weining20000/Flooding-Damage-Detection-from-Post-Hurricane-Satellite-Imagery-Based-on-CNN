@@ -9,7 +9,6 @@ This code folder contains all source code for this project. It is suggested to r
       * Machine learning using custom convolutional neural network.
       * It takes approximately 15 minutes to run the code. 
 3. satellite-images-of-hurricane-damage.zip
-      + The dataset:
       + train_another: the training data; 5000 images of each class
       + validation_another: the validation data; 1000 images of each class
       + test_another: the unbalanced test data; 8000/1000 images of damaged/undamaged classes

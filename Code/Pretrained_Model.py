@@ -200,6 +200,7 @@ def train(model, criterion, optimizer, acc, xtrain, ytrain, xval, yval, save_fil
     return model, history
 
 N_EPOCHS = 30
+
 model_vgg, history_vgg = train(model_vgg,
                        criterion_vgg,
                        optimizer_vgg,

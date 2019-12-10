@@ -24,18 +24,15 @@ import os
 #=======================================================================================================================
 #                                                   Load Data
 #=======================================================================================================================
-# Input images normalized in the same way and the image H and W are expected to be at least 224
-# Reference: https://pytorch.org/docs/stable/torchvision/models.html
+# get image data
+os.system("sudo wget https://storage.googleapis.com/group4finalproject/satellite-images-of-hurricane-damage.zip")
+os.system("sudo unzip satellite-images-of-hurricane-damage.zip")
+
 tforms = transforms.Compose([transforms.Resize((128, 128)), transforms.ToTensor(),
                              transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])])
 train_tfroms = transforms.Compose([transforms.Resize((128, 128)),transforms.ColorJitter(),
                                    transforms.RandomHorizontalFlip(), transforms.ToTensor(),
                                    transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])])
-
-# get image data
-os.system("sudo wget https://github.com/weining20000/Final-Project_Group4/blob/master/Code/satellite-images-of-hurricane-damage.zip")
-os.system("sudo unzip satellite-images-of-hurricane-damage.zip")
-
 
 # Load train image data
 traindataFromFolders = datasets.ImageFolder(root = 'train_another/', transform = train_tfroms)

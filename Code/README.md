@@ -12,4 +12,4 @@ This code folder contains all source code for this project. It is suggested to r
       + train_another: the training data; 5000 images of each class
       + validation_another: the validation data; 1000 images of each class
       + test_another: the unbalanced test data; 8000/1000 images of damaged/undamaged classes
-      + test: the balanced test data; 1000 images of each class (we only tested on the unbalanced dataset - test_another.)
+      + test: the balanced test data; 1000 images of each class (The project only tested on the unbalanced dataset - test_another.)
